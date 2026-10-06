@@ -1,116 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#140d12">
-  <title>Our Beautiful Story ❤️</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#0e090c">
+<title>A Love Story — Anniversary</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="noise"></div>
-  <main id="app">
-    <section class="screen active" id="welcome">
-      <div class="stars"></div>
-      <div class="hero-content">
-        <div class="eyebrow">A little surprise, made with love</div>
-        <div class="ring">♡</div>
-        <h1>Two hearts.<br><em>One beautiful story.</em></h1>
-        <p class="lead">Tonight isn't just about an anniversary.<br>It's about every little moment that brought you here.</p>
-        <button class="primary" data-go="story">Begin the journey <span>→</span></button>
-        <p class="tiny">Turn up the volume for the full experience ♪</p>
-      </div>
-    </section>
+<div class="grain"></div>
+<div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+<header class="topbar"><div class="monogram">♥</div><div class="topbar-note">A little celebration of forever</div><button class="sound" id="music-toggle" aria-label="Toggle music">♫</button></header>
 
-    <section class="screen" id="story">
-      <div class="section-inner">
-        <div class="eyebrow">Chapter I</div>
-        <h2>It all started<br><em>with a moment.</em></h2>
-        <div class="photo-placeholder large">
-          <div>YOUR FIRST PHOTO</div>
-          <small>Replace with a meaningful picture</small>
-        </div>
-        <p class="story-text">Some stories begin with a grand gesture. Others begin quietly — with a meeting, a smile, a conversation that neither person knew would become a lifetime.</p>
-        <button class="primary" data-go="quiz">Continue the story <span>→</span></button>
-      </div>
-    </section>
+<main>
+<section class="screen active hero" id="welcome">
+  <div class="hero-orbit"><span></span><span></span><span></span></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> made with love <span></span></div>
+    <p class="kicker">Happy Anniversary</p>
+    <h1>Two hearts,<br><em>one extraordinary story.</em></h1>
+    <p class="lead">Tonight, take a little journey through the moments, memories and magic that make your story yours.</p>
+    <button class="cta" data-go="story"><span>Begin the story</span><b>↗</b></button>
+    <p class="hint">Best experienced with sound on</p>
+  </div>
+  <div class="scroll-cue">scroll to begin <i>↓</i></div>
+</section>
 
-    <section class="screen" id="quiz">
-      <div class="section-inner narrow">
-        <div class="eyebrow">Chapter II · The little game</div>
-        <h2>How well do you<br><em>know your story?</em></h2>
-        <p class="muted">Answer together. There are no wrong answers — only memories.</p>
-        <div id="quiz-card" class="quiz-card">
-          <div class="progress"><span id="progress"></span></div>
-          <div class="q-number" id="q-number">01</div>
-          <h3 id="question">Where did your story begin?</h3>
-          <div id="answers" class="answers"></div>
-          <p id="feedback" class="feedback"></p>
-        </div>
-      </div>
-    </section>
+<section class="screen split" id="story">
+  <div class="section-inner story-grid">
+    <div class="copy">
+      <div class="eyebrow left"><span></span> chapter one</div>
+      <h2>Every forever<br>has a <em>first moment.</em></h2>
+      <p>Maybe it was a meeting. A smile. A conversation. A day that looked ordinary until, somehow, it became the beginning of everything.</p>
+      <div class="quote">“The best stories are the ones you never planned.”</div>
+      <button class="ghost-cta" data-go="quiz">Continue <span>→</span></button>
+    </div>
+    <div class="editorial-frame">
+      <div class="photo-placeholder"><div class="photo-icon">✦</div><strong>Add your first photo</strong><small>Drop your favourite early memory into <code>assets/photos/first.jpg</code></small></div>
+      <div class="frame-tag">THE BEGINNING</div>
+    </div>
+  </div>
+</section>
 
-    <section class="screen" id="memories">
-      <div class="section-inner">
-        <div class="eyebrow">Chapter III</div>
-        <h2>A lifetime of<br><em>little moments.</em></h2>
-        <p class="muted">These are placeholders. Replace them with your own photographs and captions.</p>
-        <div class="timeline">
-          <article class="memory">
-            <div class="memory-dot">01</div>
-            <div class="photo-placeholder"><span>PHOTO 01</span></div>
-            <div><div class="date">THE BEGINNING</div><h3>Where it all began</h3><p>Add the story behind this memory.</p></div>
-          </article>
-          <article class="memory">
-            <div class="memory-dot">02</div>
-            <div class="photo-placeholder"><span>PHOTO 02</span></div>
-            <div><div class="date">A BEAUTIFUL DAY</div><h3>A moment to remember</h3><p>Add another memory, trip, celebration or family moment.</p></div>
-          </article>
-          <article class="memory">
-            <div class="memory-dot">03</div>
-            <div class="photo-placeholder"><span>PHOTO 03</span></div>
-            <div><div class="date">TODAY</div><h3>Still choosing each other</h3><p>And after all these years, the story continues.</p></div>
-          </article>
-        </div>
-        <button class="primary" data-go="final">One last thing… <span>→</span></button>
-      </div>
-    </section>
+<section class="screen" id="quiz">
+  <div class="section-inner quiz-wrap">
+    <div class="eyebrow"><span></span> chapter two <span></span></div>
+    <p class="kicker">A little game</p>
+    <h2>How well do you know<br><em>your own love story?</em></h2>
+    <p class="sub">Answer together. The point isn't getting everything right — it's remembering the moments that made you smile.</p>
+    <div class="quiz-card">
+      <div class="quiz-meta"><span id="q-number">01</span><span>MEMORY CHECK</span></div>
+      <div class="progress"><span id="progress"></span></div>
+      <h3 id="question"></h3>
+      <div class="answers" id="answers"></div>
+      <p class="feedback" id="feedback" aria-live="polite"></p>
+    </div>
+  </div>
+</section>
 
-    <section class="screen final-screen" id="final">
-      <div class="final-glow"></div>
-      <div class="hero-content">
-        <div class="eyebrow">The final chapter</div>
-        <div class="big-heart">♥</div>
-        <h1>Some stories<br><em>deserve a surprise.</em></h1>
-        <p class="lead">You've reached the end of the journey.<br>But not the end of the story.</p>
-        <button class="primary gold" id="surprise">Open your surprise ✨</button>
-      </div>
-    </section>
+<section class="screen" id="memories">
+  <div class="section-inner">
+    <div class="eyebrow left"><span></span> chapter three</div>
+    <h2>A collection of<br><em>beautiful ordinary days.</em></h2>
+    <p class="sub left-sub">Replace the cards below with your own photographs and stories. The layout will do the rest.</p>
+    <div class="memory-stack">
+      <article class="memory-card featured"><div class="memory-number">01</div><div class="memory-photo photo-placeholder"><div class="photo-icon">01</div><strong>First chapter</strong><small>assets/photos/memory-01.jpg</small></div><div class="memory-copy"><span>THE BEGINNING</span><h3>Where it all began</h3><p>Add the little story that makes this photograph special.</p></div></article>
+      <article class="memory-card"><div class="memory-number">02</div><div class="memory-photo photo-placeholder"><div class="photo-icon">02</div><strong>A day worth remembering</strong><small>assets/photos/memory-02.jpg</small></div><div class="memory-copy"><span>ONE OF MANY</span><h3>A moment to keep</h3><p>A trip, a celebration, a laugh, a family moment — anything that feels like you.</p></div></article>
+      <article class="memory-card"><div class="memory-number">03</div><div class="memory-photo photo-placeholder"><div class="photo-icon">03</div><strong>And still…</strong><small>assets/photos/memory-03.jpg</small></div><div class="memory-copy"><span>TODAY</span><h3>Still choosing each other</h3><p>The story is still being written. That might be the most beautiful part.</p></div></article>
+    </div>
+    <button class="cta" data-go="final"><span>There is one more thing</span><b>↗</b></button>
+  </div>
+</section>
 
-    <section class="screen video-screen" id="video">
-      <div class="video-wrap">
-        <div id="video-placeholder" class="video-placeholder">
-          <div class="play-symbol">▶</div>
-          <h2>Your surprise video goes here</h2>
-          <p>Place your video at <code>assets/video/surprise.mp4</code></p>
-          <button class="primary" id="video-ready">I added the video</button>
-        </div>
-        <video id="surprise-video" controls playsinline preload="metadata">
-          <source src="assets/video/surprise.mp4" type="video/mp4">
-        </video>
-      </div>
-      <div class="closing">
-        <div>Happy Anniversary</div>
-        <span>With love, always. ♥</span>
-      </div>
-    </section>
-  </main>
+<section class="screen finale" id="final">
+  <div class="final-ring"></div>
+  <div class="hero-copy">
+    <div class="eyebrow"><span></span> the final chapter <span></span></div>
+    <div class="seal">♥</div>
+    <h1>The best part<br><em>is still ahead.</em></h1>
+    <p class="lead">One last button. One little surprise. And a whole lot of love waiting on the other side.</p>
+    <button class="cta cta-gold" id="surprise"><span>Unlock the surprise</span><b>✦</b></button>
+  </div>
+</section>
 
-  <audio id="music" loop preload="auto">
-    <source src="assets/music/anniversary.mp3" type="audio/mpeg">
-  </audio>
-  <button class="music-toggle" id="music-toggle" aria-label="Toggle music">♪</button>
-  <div id="confetti"></div>
-  <script src="script.js"></script>
+<section class="screen video-screen" id="video">
+  <div class="video-inner">
+    <div class="eyebrow"><span></span> made for you <span></span></div>
+    <div class="video-shell">
+      <div id="video-placeholder" class="video-placeholder">
+        <div class="video-play">▶</div>
+        <h2>Your film goes here.</h2>
+        <p>Add <code>assets/video/surprise.mp4</code> and the page will play it here.</p>
+        <button class="ghost-cta" id="video-ready">Load my video <span>→</span></button>
+      </div>
+      <video id="surprise-video" controls playsinline preload="metadata">
+        <source src="assets/video/surprise.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="closing-message"><span>Happy Anniversary</span><small>May there always be another chapter. ♥</small></div>
+  </div>
+</section>
+</main>
+<audio id="music" loop preload="auto"><source src="assets/music/anniversary.mp3" type="audio/mpeg"></audio>
+<div id="confetti"></div>
+<script src="script.js"></script>
 </body>
 </html>
