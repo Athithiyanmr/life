@@ -24,7 +24,7 @@
     <h1>Two hearts,<br><em>one extraordinary story.</em></h1>
     <p class="lead">Tonight, take a little journey through the moments, memories and magic that make your story yours.</p>
     <button class="cta" data-go="story"><span>Begin the story</span><b>↗</b></button>
-    <p class="hint">Best experienced with sound on</p>
+    <p class="hint">Tap anywhere or press Begin to turn the music on</p>
   </div>
   <div class="scroll-cue">scroll to begin <i>↓</i></div>
 </section>
@@ -39,7 +39,7 @@
       <button class="ghost-cta" data-go="quiz">Continue <span>→</span></button>
     </div>
     <div class="editorial-frame">
-      <div class="photo-placeholder"><div class="photo-icon">✦</div><strong>Add your first photo</strong><small>Drop your favourite early memory into <code>assets/photos/first.jpg</code></small></div>
+      <div class="photo-placeholder photo-filled"><img src="assets/photos/0.JPG" alt="The beginning"><div class="photo-overlay"></div></div>
       <div class="frame-tag">THE BEGINNING</div>
     </div>
   </div>
@@ -65,11 +65,23 @@
   <div class="section-inner">
     <div class="eyebrow left"><span></span> chapter three</div>
     <h2>A collection of<br><em>beautiful ordinary days.</em></h2>
-    <p class="sub left-sub">Replace the cards below with your own photographs and stories. The layout will do the rest.</p>
+    <p class="sub left-sub">Four photographs. One story. Take a moment with each memory.</p>
     <div class="memory-stack">
-      <article class="memory-card featured"><div class="memory-number">01</div><div class="memory-photo photo-placeholder"><div class="photo-icon">01</div><strong>First chapter</strong><small>assets/photos/memory-01.jpg</small></div><div class="memory-copy"><span>THE BEGINNING</span><h3>Where it all began</h3><p>Add the little story that makes this photograph special.</p></div></article>
-      <article class="memory-card"><div class="memory-number">02</div><div class="memory-photo photo-placeholder"><div class="photo-icon">02</div><strong>A day worth remembering</strong><small>assets/photos/memory-02.jpg</small></div><div class="memory-copy"><span>ONE OF MANY</span><h3>A moment to keep</h3><p>A trip, a celebration, a laugh, a family moment — anything that feels like you.</p></div></article>
-      <article class="memory-card"><div class="memory-number">03</div><div class="memory-photo photo-placeholder"><div class="photo-icon">03</div><strong>And still…</strong><small>assets/photos/memory-03.jpg</small></div><div class="memory-copy"><span>TODAY</span><h3>Still choosing each other</h3><p>The story is still being written. That might be the most beautiful part.</p></div></article>
+      <article class="memory-card featured">
+        <div class="memory-number">01</div>
+        <div class="memory-photo photo-filled"><img src="assets/photos/1.jpeg" alt="Memory one"><div class="photo-overlay"></div></div>
+        <div class="memory-copy"><span>MEMORY ONE</span><h3>A moment to remember</h3><p>One photograph, one beautiful chapter in the story.</p></div>
+      </article>
+      <article class="memory-card">
+        <div class="memory-number">02</div>
+        <div class="memory-photo photo-filled"><img src="assets/photos/2.jpeg" alt="Memory two"><div class="photo-overlay"></div></div>
+        <div class="memory-copy"><span>MEMORY TWO</span><h3>A day worth keeping</h3><p>The little moments often become the memories we treasure most.</p></div>
+      </article>
+      <article class="memory-card">
+        <div class="memory-number">03</div>
+        <div class="memory-photo photo-filled"><img src="assets/photos/3.jpeg" alt="Memory three"><div class="photo-overlay"></div></div>
+        <div class="memory-copy"><span>MEMORY THREE</span><h3>And still, together</h3><p>The story continues — with more laughter, more memories and more love.</p></div>
+      </article>
     </div>
     <button class="cta" data-go="final"><span>There is one more thing</span><b>↗</b></button>
   </div>
@@ -104,7 +116,10 @@
   </div>
 </section>
 </main>
-<audio id="music" loop preload="auto"><source src="assets/music/anniversary.mp3" type="audio/mpeg"></audio>
+
+<audio id="music" loop preload="auto">
+  <source src="assets/music/anniversary.MP3" type="audio/mpeg">
+</audio>
 <div id="confetti"></div>
 <script src="script.js"></script>
 </body>
